@@ -31,11 +31,14 @@
 					<section id="main" class="wrapper">
 						<div class="inner">
 							<h1 class="major">Social Media Site</h1>
+							<a href="https://github.com/mohobson/quackr" target="_blank" rel="noopener noreferrer" class="icon brands fa-github" target="_blank" rel="noopener nonreferrer"><span class="label">GitHub</span> Source Code</a>
 							<a href="https://flaskr-326802.ue.r.appspot.com/" target="_blank" rel="noopener noreferrer" class="image fit"><img src="images/quackr.jpg" alt="" /></a>
 							<h2>Overview</h2>
-							<p>It's no Twitter, but <a href="https://flaskr-326802.ue.r.appspot.com/">Quackr</a> is a functioning social media site where users can log in and make posts.</p>
+							<p>It's no Twitter, but Quackr is a functioning social media site where users can log in and make posts.</p>
 							<h2>Deployment</h2>
-							<p>Quackr was built using Flask's documentation. My goal for this project was to deploy a dynamic website using Google App Engine.</p>
+							<p>My goal for this project was to deploy a dynamic website using Google App Engine. Quackr was built using Flask's documentation.</p>
+							<h2>Challenges</h2>
+							<p>Cost. Using the Google App Engine flex environment means at least one instance is running at all times. I learned that by default two instances spin up when you deploy to GAE flex, so I added manual scaling to my app.yaml to limit the instances to one. Although doing this cut the cost in half, it's still relatively expensive to run a personal project on here. So, I created a dev version of my site that I can toggle on and off with one Google Cloud SDK command. Unfortunately, this means I generally leave the site down unless I'm working on it. In the future, I may switch to the GAE standard environment, but I understand there are some differences such as not being able to use a Dockerfile to modify the runtime. Another option I may pursue is Heroku.</p>
 						</div>
 					</section>
 
