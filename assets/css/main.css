@@ -3903,7 +3903,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#intro {
-				background-attachment: fixed;
+				background-attachment: scroll;
 			}
 
 		}
