@@ -3231,7 +3231,6 @@ input, select, textarea {
 
 				.wrapper > .inner {
 					padding: 3em 2em 1em 2em ;
-					height: 100vm;
 				}
 
 			}
@@ -3304,7 +3303,7 @@ input, select, textarea {
 				}
 
 					body.is-ie .wrapper.fullscreen {
-						height: 100vh;
+						height: auto;
 					}
 
 			}
