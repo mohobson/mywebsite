@@ -2632,8 +2632,11 @@ input, select, textarea {
 	}
 
 		ul li {
+			display: flex;
 			padding-left: 0.5em;
 			list-style: none;
+			flex-direction: column;
+			white-space: pre;
 		}
 
 		ul.alt {
