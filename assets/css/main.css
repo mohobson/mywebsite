@@ -3862,7 +3862,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 480px) {
 
 			#sidebar {
 				display: none;
@@ -3893,7 +3893,7 @@ input, select, textarea {
 
 			}
 
-			@media screen and (max-width: 736px) {
+			@media screen and (max-width: 480px) {
 
 				#intro p {
 					font-size: 1em;
