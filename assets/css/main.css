@@ -2636,7 +2636,7 @@ input, select, textarea {
 			padding-left: 0.5em;
 			list-style: none;
 			flex-direction: column;
-			white-space: pre;
+			/* white-space: pre; */
 		}
 
 		ul.alt {
@@ -3491,6 +3491,16 @@ input, select, textarea {
 
 	#header + #wrapper > .wrapper > .inner {
 		margin: 0 auto;
+	}
+
+	.grey {
+		font-weight: 600;
+		/* font-style: oblique; */
+	}
+
+	.mo-hobson {
+		font-weight: 600;
+		font-style: oblique;
 	}
 
 /* Footer */
