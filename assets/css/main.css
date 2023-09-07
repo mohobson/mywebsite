@@ -3499,8 +3499,8 @@ input, select, textarea {
 	}
 
 	.mo-hobson {
-		font-weight: 600;
-		font-style: oblique;
+		font-weight: 900;
+		/* font-style: oblique; */
 	}
 
 /* Footer */

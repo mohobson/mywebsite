@@ -31,43 +31,55 @@
 					<section id="main" class="wrapper">
 						<div class="inner">
 							<h1 class="major">Social Media Site</h1>
-								<ul>
+							<div class="inner">
+								<ul class="actions">
 									<li>
-										<a href="https://github.com/mohobson/quackr" target="_blank" rel="noopener noreferrer" class="icon brands fa-github" target="_blank" rel="noopener nonreferrer"><span class="label">GitHub</span>  View source code on Github</a>
-										<a href="https://quackr.onrender.com/" target="_blank" rel="noopener noreferrer" class="icon solid fa-user-astronaut" target="_blank" rel="noopener nonreferrer"><span class="label">Flask</span>  Try out the site</a>
+										<a href="https://quackr.onrender.com/" target="_blank" rel="noopener noreferrer" class="button">Visit Site</a>
 									</li>
-								</ul>								
+									<li>
+										<a style="white-space: pre-wrap; display: flex; justify-content: center;"
+											href="https://github.com/mohobson/quackr" target="_blank" rel="noopener noreferrer" class="button">
+											<span class="icon brands fa-github fa-2x"></span>  View source code
+										</a>
+									</li>
+								</ul>	
+							</div>							
 								<a href="https://quackr.onrender.com/" target="_blank" rel="noopener noreferrer" class="image fit"><img src="images/quackr.jpg" alt="" /></a>
 							<h2>Overview</h2>
 								<p>
-									It's no Twitter, but Quackr is a functioning social media site
-									where users can log in and make posts. Quackr was built using
-									Flask documentation, but was later deployed using documentation
-									from Google Cloud and other online resources.
+									It's no Twitter or X or whatever you want to call that site,
+									but Quackr is a functioning social media app
+									where users can log in and make posts. I built the Quackr app using
+									Flask documentation, but later deployed it to Google Cloud and then 
+									Render where it lives now.
 								</p>
 
 							<h2>Deployment</h2>
 								<p>
 									For this project, my objective was to successfully deploy a
 									dynamic website using Google App Engine. This experience
-									provided me with hands-on exposure to various Google Cloud
-									deployment practices, including Dockerfile and yaml.
+									provided me with hands-on exposure to the Flask framework,
+									website security, and various Google Cloud
+									deployment practices including Dockerfile and yaml.
 								</p>
 
 							<h2>Challenges</h2>
 								<p>
-									Cost. Using the Google App Engine flex environment means at least
-									one instance is running at all times. I learned that by default,
+									Hosting cost. Using the Google App Engine (GAE) flex environment means that at least
+									one instance of the site will run at all times. I learned that by default,
 									two instances spin up when you deploy to GAE flex, so I added
 									manual scaling to my app.yaml to limit the instances to one.
 									Although doing this cut the cost in half, it's still relatively
-									expensive to run a personal project on here. So, I created a dev
+									expensive to run a personal project on GAE. So, I created a dev
 									version of my site that I can toggle on and off with one Google
-									Cloud SDK command. Unfortunately, this means I generally leave
-									the site down unless I'm working on it. Currently, the site is
-									hosted
-									<a href="https://quackr.onrender.com/" target="_blank" rel="noopener nonreferrer">here on Render</a> 
-									using their free tier service. In the future, I may switch back
+									Cloud SDK command. Unfortunately, this means I generally had to leave
+									the site down unless I was working on it. Currently, the site is
+									hosted <a href="https://quackr.onrender.com/" target="_blank"
+									rel="noopener nonreferrer">here on Render</a> 
+									using their free tier service. Render has been my go-to hosting
+									service because of their developer-friendly free tier, but the 
+									downside is that the site spins down after inactivity, so it can 
+									take some time to load up initially. In the future, I may switch back
 									to the GAE standard environment, but I understand there are
 									some differences such as not being able to use a Dockerfile
 									to modify the runtime.
