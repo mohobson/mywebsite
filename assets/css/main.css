@@ -1976,6 +1976,20 @@ input, select, textarea {
 					opacity: 0.1;
 				}
 
+				.button.condensed {
+					display: flex;
+					flex-wrap: wrap;
+					white-space: pre-wrap;
+					min-height: calc(4.75em + 2px);
+					height: fit-content;
+					justify-content: center;
+					align-items: center;
+					text-align: center;
+					line-height: inherit;
+					gap: 4px;
+					padding: 4px 12px 4px 12px;
+				}
+
 /* Features */
 
 	.features {
@@ -2612,6 +2626,19 @@ input, select, textarea {
 			.image.main img {
 				width: 100%;
 			}
+
+
+/* Video */
+
+	.video {
+		border-radius: 0.25em;
+		border: 0;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		height: auto;
+	}
 
 /* List */
 
